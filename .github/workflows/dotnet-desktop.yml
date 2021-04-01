@@ -41,3 +41,6 @@ jobs:
       run: msbuild $env:Solution_Name /t:Rebuild /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
+
+    - name: Create msi from PowerShell Script
+      run: pwsh -command ".\$GITHUB_WORKSPACE\create_msi.ps1"
