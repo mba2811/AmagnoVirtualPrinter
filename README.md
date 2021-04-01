@@ -1,5 +1,7 @@
 # AmagnoVirtualPrinter
 
+Test changes, to test release action
+
 ## Description
 
 The _AmagnoVirtualPrinter_ is an interface which forwards any print job given from a specified printer, to a specified application that processes the 'print job'.
