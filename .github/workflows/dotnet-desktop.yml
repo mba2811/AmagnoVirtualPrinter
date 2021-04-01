@@ -1,4 +1,4 @@
-name: .NET Core Desktop
+name: CI-Build
 
 on:
   push:
