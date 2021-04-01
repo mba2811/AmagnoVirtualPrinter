@@ -44,3 +44,9 @@ jobs:
 
     - name: Create msi from PowerShell Script
       run: pwsh -command ".\$GITHUB_WORKSPACE\create_msi.ps1"
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: AmagnoPrinterInstaller.msi
+        path: $GITHUB_WORKSPACE/AmagnoPrinterInstaller.msi
